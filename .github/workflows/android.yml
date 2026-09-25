@@ -23,6 +23,7 @@ jobs:
       uses: gradle/actions/setup-gradle@v3
       with:
         gradle-version: '8.0'
+        cache-disabled: true  <-- تم تعطيل الـ cache هنا
 
     - name: Build Debug APK
       run: gradle assembleDebug
